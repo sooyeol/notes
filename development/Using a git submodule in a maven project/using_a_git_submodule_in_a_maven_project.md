@@ -1,5 +1,5 @@
 
-# This guide is for those wanting to add a Maven project as a git submodule to another Maven project.
+## Adding a Maven project as a git submodule to another Maven project
 
 ### Using an **existing MAVEN project** as a submodule
 

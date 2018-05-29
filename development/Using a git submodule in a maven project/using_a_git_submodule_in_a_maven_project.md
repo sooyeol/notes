@@ -50,7 +50,15 @@ Your project structure should now be:
         <module>submodule</module>
     </modules>
 ```
-8. When submodule code is updated:
+8. In pom.xml in your main project folder, add your submodule as a dependency:
+```
+        <dependency>
+            <groupId>submodule</groupId>
+            <artifactId>submodule</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+```
+9. When submodule code is updated:
 ```
 $ cd top_project_folder/submodule_folder
 
@@ -64,6 +72,6 @@ $ git commit -m "Get latest submodule"
 
 $ git push
 ```
-9. When packaging your Maven project
+10. When packaging your Maven project
    1. Go to the top project folder, then run `mvn install`
    3. Go to your main project folder, then run `mvn package`.
